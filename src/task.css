@@ -1,0 +1,2379 @@
+* {
+    margin: 0;
+    padding: 0%;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-behavior: smooth;
+ 
+}
+
+.styles {
+    background-image: url(./Images/bg2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+  
+}
+
+.navbar {
+    display: flex;
+    background-color: white;
+    height: 9vh;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+/* .hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+}
+.hamburger div {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+} */
+.logo {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo-title {
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo-title span {
+    color: orange;
+}
+
+.nav-items {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-items a {
+    color: black;
+    font-size: 1.4rem;
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.nav-items a:hover {
+    color: orange;
+}
+
+.dashhh {
+    width: 20%;
+}
+
+.btn-dash {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: 10rem;
+}
+
+.dashbtn {
+    width: 7rem;
+    height: 2rem;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.btn3 {
+    height: 3rem;
+    width: 4rem;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    border-color: #40c4bb;
+    border: 1px solid;
+}
+
+.btn3:hover {
+    color: white;
+    background-color: #40c4bb;
+}
+
+/* --------------------------------------------------------------------------------Main-------------------------------------------------------*/
+
+.Main {
+    height: 90vh;
+    background-color: white;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.leftside {
+    width: 40%;
+    justify-content: center;
+    background-color: transparent;
+    display: block;
+    align-items: center;
+    margin: 2rem;
+}
+
+.rightside {
+    max-width: 50%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.rightside img {
+    width: 80%;
+    height: 50%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10rem;
+}
+
+.leftside h3 {
+    font-size: 50px;
+    transition: color 0.5s ease-in-out;
+    color: orange;
+}
+
+.leftside h3 span {
+    color: black;
+    animation: bounce 2s infinite;
+}
+
+.leftside h4 {
+    font-size: 70px;
+    transition: color 0.5s ease-in-out;
+    color: black;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+
+.leftside h1 {
+    font-size: 30px;
+    color: rgb(39, 152, 180);
+}
+
+.leftside p {
+    margin-top: 5px;
+    font-size: 18px;
+    color: black;
+    width: 40%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    display: none;
+}
+
+.leftside h1 span {
+    color: white;
+}
+
+.bgpic {
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+}
+
+.photo {
+    border-radius: 50%;
+    height: 29rem;
+}
+
+.btn1 {
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 40px;
+    width: 10rem;
+    background-color: white;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    border: 1px solid black;
+    box-shadow: 5px 5px 30px 0px rgb(255, 255, 255);
+    margin-right: 15px;
+}
+
+.btn1:hover {
+    background-color: black;
+    color: white;
+}
+
+.log-items {
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.log-items a {
+    margin: 1rem;
+    border-radius: 50%;
+    border: 1px solid transparent;
+
+}
+
+/*----------------------------------------------------------------------------------ABOUT----------------------------------------------------------------------------------------*/
+.about {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    border-bottom: 3rem solid white;
+    border-top: 3rem solid white;
+
+}
+
+.experienceee {
+    background-color: orange;
+    color: white;
+    border-radius: 50%;
+    font-size: 5rem;
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutup {
+    background-image: url(./Images/about.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    height: 35rem;
+}
+
+.about-info {
+    height: 85%;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.808);
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.aboutdown {
+    height: 10rem;
+    background-color: #1b96c7b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    justify-content: space-between;
+    border-left: 2rem #1b96c7b9;
+
+}
+
+.exp {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+}
+
+.exp h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+
+.exp h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 1rem;
+}
+
+.info-left {
+    width: 60%;
+    padding: 2rem;
+}
+
+.info-left h1 {
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: orange;
+    text-align: left;
+}
+
+.info-left p {
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5;
+    color: #02466e;
+
+
+}
+
+.info-rgt {
+    width: 30%;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-rgt h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: orange;
+    font-size: 2rem;
+    justify-content: flex-start;
+    margin-left: 2rem;
+}
+
+.about-logo {
+    margin-top: 2rem;
+}
+
+.about-logo a {
+    margin-right: 2rem;
+    justify-content: flex-start;
+}
+
+/*---------------------------------------------------------------------------------Contact------------------------------------------------------------------------------------*/
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    background: linear-gradient(to top, white, rgba(255, 255, 255, 0));
+
+}
+
+.section-title {
+    font-size: 30px;
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    height: 2.5rem;
+    background-color: white;
+}
+
+.section-title span {
+    color: #28ccc1;
+}
+
+.contactcontainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: white;
+    height: 50vh;
+}
+
+.contact-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-item {
+    width: 80%;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid rgb(0, 0, 0);
+    transition: 0.3s ease box-shadow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-item:hover {
+    box-shadow: 10px 10px 50px 5px rgb(136, 132, 132);
+    transform: scale(0.9);
+}
+
+.icon {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-info h1 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.contact-info h2 {
+    font-size: 1.1rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+/*-------------------------------------------------------------------------------------Team---------------------------------------------------------------------*/
+
+
+.Team {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 60vh;
+overflow: hidden;
+}
+
+.team-head {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+}
+
+.team-head span {
+    color: orange;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    width: 70%;
+    justify-content: center;
+    height: auto;
+
+}
+
+.slick-track {
+    height: auto;
+}
+
+.card-image {
+    width: 100%;
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 1rem;
+
+}
+
+.card-image img {
+    border-radius: 50%;
+    height: 12rem;
+    width: 12rem;
+    border: 5px solid rgb(107, 192, 192);
+    padding: 5px;
+    filter: grayscale(100%);
+
+}
+
+.card {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3rem;
+    height: auto;
+    background-color: white;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.card-content {
+    text-align: center;
+    display: block;
+}
+
+.card-content h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    margin-top: 0.5rem;
+}
+
+.card-content p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    color: #054a6db9;
+    margin-top: 0.5rem;
+    width: 20rem;
+}
+
+.section-title span {
+    color: #28ccc1;
+}
+
+/*-----------------------------------------------------------------------------------------Projects-------------------------------------------------------------------*/
+.project {
+    height: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #1b96c7b9;
+
+}
+
+.project-cards {
+    display: flex;
+    height: auto;
+    width: 60%;
+    flex-direction: column;
+    border-radius: 2rem;
+    margin: 2rem;
+    margin-left: 3rem;
+}
+
+.project-cards:hover {
+    opacity: 0.5;
+}
+
+.projectinfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Images/projects.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5rem;
+    height: 30rem;
+
+}
+
+.projects {
+    display: flex;
+}
+
+.projectinfo h1 {
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+
+}
+
+.projectinfo p {
+    width: auto;
+    color: white;
+
+}
+
+.service-head {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: left;
+    text-align: left;
+
+}
+
+.heading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    color: white;
+    margin: 0%;
+}
+
+.heading span {
+    color: orange;
+}
+
+.service-para {
+    color: white;
+    margin-top: 0.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: auto;
+    justify-content: left;
+    text-align: justify;
+    margin-right: 1rem;
+}
+
+.lets-talk {
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 3rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.lets-talk:hover {
+    transform: scale(1.1);
+}
+
+.btn-talk {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: orange;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px transparent;
+    font-size: 1.5rem;
+    background-color: transparent;
+    box-shadow: 10px 10px 50px 30px rgb(255, 255, 255);
+}
+
+/*----------------------------------------------------------------------------Testinomials-----------------------------------------------------*/
+
+
+.testinomials {
+    width: 100%;
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1b96c7b9;
+    height: auto;
+    width: 100%;
+}
+
+.left-column {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-column h2 {
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.left-column h2 span {
+    color: orange;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    width: 59%;
+    height: auto;
+    padding: 1rem;
+
+}
+
+.rgt-up {
+    border-radius: 3rem;
+    height: 20rem;
+    width: auto;
+    background-color: white;
+    margin-bottom: 3rem;
+
+}
+
+.slick-initialized .slick-slide {
+    display: flex;
+
+}
+
+.imgg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rgt-up img {
+    border-radius: 50%;
+    height: 7rem;
+    width: 7rem;
+    margin: 1rem;
+}
+
+.infoo {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.infoo h3 {
+    font-size: 2rem;
+    color: #1b96c7b9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.infoo p {
+    font-size: 1rem;
+    width: 20rem;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*-----------------------------------------------------------------------------------------Contactform-----------------------------------------------------------*/
+
+.Sign {
+    height: auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signinform {
+    display: flex;
+    height: auto;
+
+}
+
+.contact-up {
+    display: flex;
+}
+
+.address {
+    height: auto;
+    width: 100%;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.address img {
+    margin: 1rem;
+    border: 2px solid orange;
+    ;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.content {
+    display: block;
+    padding: 5px;
+}
+
+.content h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    color: orange;
+}
+
+.content h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    color: orange;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.FORM {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    height: auto;
+    margin: 2rem;
+    border-radius: 2rem;
+}
+
+.form-control {
+    margin: 5px;
+    height: 2rem;
+    width: 20rem;
+    border: 1px solid rgb(240, 247, 251);
+    border-radius: 5px;
+    transition: a 4s ease-in-out;
+    padding: 5px;
+    outline-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.form-control1 {
+    margin: 5px;
+    height: 5rem;
+    width: 20rem;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    outline-color: transparent;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+
+}
+
+.btn-submit {
+    width: 8rem;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    background-color: white;
+    border: 1px solid orange;
+    color: orange;
+    font-size: 1rem;
+
+}
+
+.btn-submit:hover {
+    background-color: orange;
+    color: white;
+}
+
+.signin-head {
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 2rem;
+}
+
+.signin-head span {
+    color: orange;
+}
+
+/*--------------------------------------------------------------------------------------Footer-----------------------------------------------------------------------------*/
+
+.footer-container {
+
+    height: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-box {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1b96c7b9;
+}
+
+.footer-content {
+    text-align: left;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    margin: 1rem;
+    margin-left: 6rem;
+}
+
+.logo-section {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+
+}
+
+.logoo {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 0.5rem;
+    transition: 0.3s ease box-shadow;
+    padding: 1rem;
+}
+
+.log {
+    display: flex;
+    background-image: url(../src/Images/bgg.jpg);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    color: white;
+    text-align: justify;
+    max-width: 20rem;
+}
+
+.footer-content h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    color: white;
+
+}
+
+.footer-content h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    color: white;
+    margin-top: 0.3rem;
+}
+
+.footer-content h1 span {
+    color: orange;
+}
+
+.insta-logo {
+    height: 2rem;
+    width: 2rem;
+    padding: 0.7rem;
+
+}
+
+.insta-logo:hover {
+    height: 2.3rem;
+    width: 2.3rem;
+}
+
+/*---------------------------------------------------------------------------------------------Services----------------------------------------------------------------*/
+
+.service {
+    width: 100%;
+    height: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    text-align: center;
+}
+
+.serviceleft {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.servicehead {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 4rem;
+
+}
+
+.serviceright {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-title span {
+    color: orange;
+}
+
+.service-title {
+    display: flex;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 0;
+    color: white;
+    /* margin-top: 2rem; */
+}
+
+.serviceup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicedown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services {
+    height: 20rem;
+    width: 17rem;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center
+}
+
+
+.serviceimg {
+    width: 35%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+
+}
+
+.border {
+    border: 3px solid orange;
+    transition: transform 0.3s ease;
+    width: 35%;
+    height: 35%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .border:hover {
+    transform: rotate(90deg);
+} */
+
+.serviceimg:hover::after {
+    position: absolute;
+    transform: rotate(45deg);
+    pointer-events: none;
+    /* Ensure the border does not interfere with mouse events */
+}
+
+.service-info {
+    height: 60%;
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.services h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 2rem;
+
+}
+
+
+.services p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 1rem;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------Communication-------------------------------------------------------------------*/
+.Communicate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.c1image {
+    background-image: url(../src/Images/com.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.c1-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1b96c7b9;
+}
+
+.c1-content h1 {
+    font-size: 2.5rem;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1rem;
+}
+
+.c1-content p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    width: 70%;
+
+}
+
+.cmain {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+}
+
+.btn-communicate {
+    width: 15rem;
+    height: 3rem;
+    margin: 2rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: rgb(238, 124, 17);
+    color: white;
+}
+
+
+/*-----------------------------------------------------------------------------------------Dashboard---------------------------------------------------------------------*/
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+    height: 100vh;
+    /* background-color: #1b96c7b9; */
+    background-color: rgb(47, 71, 80);
+    width: 15%;
+    padding-top: 3rem;
+}
+
+.dashboard h1 {
+    font-size: 2rem;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard a span {
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+
+}
+
+.dashboard a {
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 1rem;
+
+}
+
+.dashboard a span:hover {
+    color: orange;
+    font-size: 18px;
+}
+
+.dashboard button {
+    height: 3rem;
+    width: 9rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    color: white;
+    background-color: orange;
+    border: 1px solid orange;
+    font-size: 1rem;
+}
+
+
+
+.dashboard button:hover {
+    background-color: white;
+    color: orange;
+    border: 1px solid white;
+}
+
+.dash {
+    display: flex;
+    width: 100%;
+    /* background-image: url(./Images/characters-playing-with-colorful-gears.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-attachment: fixed;
+    overflow: hidden;
+
+}
+
+.video-background__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.video-background__content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.dashboard-cont {
+    height: 100%;
+    width: 85%;
+
+}
+
+
+
+/*--------------------------------------------------------------------------------------Success-----------------------------------------------*/
+.success {
+    display: block;
+    background-color: #1b96c7b9;
+    height: 45vh;
+    position: relatives;
+    overflow: hidden;
+}
+
+.success-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success-icon {
+    border: 3px solid white;
+    height: 19rem;
+    width: 20rem;
+    margin: 2rem;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relatives;
+}
+
+.success-icon h1 {
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.success-icon h2 {
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.succcess-head {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    color: white;
+
+}
+
+.succcess-head span {
+    color: orange;
+}
+
+/*-----------------------------------------------------------------------------------------------------------SIGNIN--------------------------------------------------------*/
+.usersection {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.usersection h1 {
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 3rem;
+}
+
+.usersection h1 span {
+    color: orange;
+}
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup input {
+    margin: 5px;
+    height: 2rem;
+    width: 20rem;
+    border: 1px solid rgb(240, 247, 251);
+    border-radius: 5px;
+    transition: a 4s ease-in-out;
+    padding: 5px;
+    outline-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.signup button {
+    width: 8rem;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    background-color: white;
+    border: 1px solid orange;
+    color: orange;
+    font-size: 1rem;
+    margin: 1.5rem;
+}
+
+.btn-action {
+    display: flex;
+}
+
+.login-logo img {
+    height: 30rem;
+}
+
+/*-----------------------------------------------------------------------------------------Media queries------------------------------------------------------------------*/
+
+
+.hamburger-icon {
+    cursor: pointer;
+    display: none;
+    /* Hidden by default for larger screens */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+}
+
+.menu-items {
+    position: absolute;
+    top: 60px;
+    /* Adjust the top position as needed */
+    left: 0;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Additional styles for the open state */
+.hamburger-icon.open .bar:first-child {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-icon.open .bar:last-child {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.hamburger-icon.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+
+
+.hamburger-menu.open {
+    height: 120px;
+    /* Adjust the height as needed */
+}
+
+.hamburger-icon.open {
+    transform: rotate(180deg);
+}
+
+.hamburger-menu.open .menu-items {
+    display: flex;
+    opacity: 1;
+}
+
+
+
+/*----------------------------------------------------------------------------------------------Manage Test----------------------------------------------------------------------*/
+.Managetestinomials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.836);
+}
+
+.Managetestinomials h1 {
+    font-size: 3rem;
+    margin: 4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.Managetestinomials h1 span {
+    color: orange;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+}
+
+th,
+td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+    width: fit-content;
+    height: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(255, 255, 255, 0.801);
+    text-align: center;
+}
+
+th {
+    background-color: #2e8b5cc5;
+    color: white;
+
+}
+
+/* Styling for testimonial data */
+.test-data {
+    background-color: #f9f9f9;
+}
+
+/* Styling for action buttons */
+.btn-manage {
+    display: flex;
+    gap: 5px;
+}
+
+.inputfields {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-test {
+    height: 2rem;
+    width: auto;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 0.5rem;
+    border: none
+}
+
+.inputfields button {
+    height: 2rem;
+    width: 10rem;
+    margin: 15px;
+    background-color: rgb(38, 180, 38);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.imageInput {
+    margin: 10px;
+    margin-left: 15px;
+}
+
+.btn-update {
+    background-color: rgb(42, 150, 221);
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    height: auto;
+    width: auto;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.btn-delete {
+    background-color: red;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    height: auto;
+    width: auto;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.test-data strong {
+    font-size: 1rem
+}
+
+.Dashboard {
+    background-color: white;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------Media queries------------------------------------------------*/
+
+@media (Max-width:1020PX) {
+    .Main {
+        height: 30rem;
+
+        background-image: none;
+        background-color: #46a8ad5e;
+
+    }
+
+    .Main h1 {
+        font-size: 2rem;
+    }
+
+    .Main h3 {
+        font-size: 2rem;
+    }
+
+    .Main h4 {
+        font-size: 3rem;
+    }
+
+    .Main p {
+        text-align: justify;
+        width: 45rem;
+    }
+
+    .contact-item {
+        height: 12rem;
+        width: 10rem;
+    }
+
+    .contact-info h2 {
+        font-size: 1rem
+    }
+
+    .services {
+        height: 26rem;
+    }
+
+    .service-head {
+        margin-left: 5rem;
+        width: 20rem;
+    }
+
+    .service-head p {
+        width: 10rem;
+    }
+
+    .web-design p {
+        margin-right: 0;
+    }
+
+    .service-offer {
+        margin-right: 10px;
+    }
+
+    .card-container {
+        width: auto;
+    }
+
+    .card {
+        width: auto;
+    }
+
+    .empic1 h2 {
+        font-size: 15px;
+    }
+
+    .empic1 p {
+        font-size: 15px;
+    }
+
+    .team-lead {
+        height: 15rem;
+    }
+
+    .testimonial-container {
+
+        align-items: center;
+        height: 90rem;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testinomials {
+        height: 93em;
+    }
+
+    .left-column {
+        width: 55rem;
+        text-align: center;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .left-column p {
+        width: 40rem;
+        text-align: justify;
+    }
+
+    .right-column {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rgt-up {
+        height: 22rem;
+        width: 22rem;
+    }
+
+    .rgt-up h3 {
+        color: white;
+    }
+
+    .rgt-up2 {
+        height: 22rem;
+        width: 22rem;
+    }
+
+    .right-column {
+        margin-left: 0;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-content p {
+        width: 18rem;
+        font-size: 15px;
+    }
+
+    .footer-content {
+        margin-left: 10px;
+
+    }
+}
+
+@media (max-width:363px)and (min-width:270px) {
+
+    .nav-items ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .logo {
+        width: 10rem;
+        height: 3rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    .log-items a {
+        animation: none;
+    }
+
+    .nav-items a {
+        margin: 0;
+        padding: 15px;
+
+    }
+
+    .Main {
+        width: 363px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0%;
+        height: 35rem;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .Main h1 {
+        font-size: 20px;
+    }
+
+    .Main h3 {
+        font-size: 20px;
+    }
+
+    .Main h4 {
+        font-size: 20px;
+    }
+
+    .Main p {
+        text-align: justify;
+        width: 15rem;
+        font-size: 5px;
+    }
+
+    .leftside {
+        margin-top: 6rem;
+        width: 300px;
+        margin-left: 0;
+
+    }
+
+    .leftside p {
+        font-size: 15px;
+    }
+
+    .contact-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact {
+        height: auto;
+    }
+
+    .contact-item {
+        margin: 1rem;
+        height: 9rem;
+    }
+
+    .icon {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    .service-head {
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service-head h1 {
+        font-size: 2rem;
+
+    }
+
+    .lets-talk {
+        margin: 2rem;
+    }
+
+    .web-design {
+        justify-content: center;
+        margin: 2rem;
+        align-items: center;
+        display: inline-block;
+    }
+
+    .web-design p {
+        font-size: 0.9rem;
+        width: 400px;
+    }
+
+    .web-design h1 {
+        font-size: 1.5rem;
+    }
+
+    .service-offer {
+        margin-bottom: 7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .team-lead {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    .team-members {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    .Team {
+        height: auto;
+    }
+
+    .empic1 {
+        display: flexbox;
+    }
+
+    .testinomials {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .testimonial-container {
+        height: auto;
+        width: 20rem;
+        margin: 2rem;
+    }
+
+    .left-column h2 {
+        font-size: 25px;
+    }
+
+    .left-column p {
+        width: 19rem;
+    }
+
+    .rgt-up {
+        width: 20rem;
+    }
+
+    .rgt-up h3 {
+        font-size: 15px;
+    }
+
+    .rgt-up2 {
+        width: 20rem;
+    }
+
+    .rgt-up2 h3 {
+        font-size: 15px;
+    }
+
+    .rgt-up2 {
+        width: 20rem;
+    }
+
+    .footer-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        display: none;
+    }
+
+    .footer-container {
+        height: auto;
+    }
+
+    .footer-content {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-content h1 {
+        font-size: 1rem;
+    }
+
+    .footer-content p {
+        font-size: 1rem;
+    }
+
+    .hamburger-icon {
+        display: flex;
+        margin-top: 2rem;
+        margin-left: 8rem;
+    }
+
+    .menu-items {
+        top: 40px;
+    }
+
+
+}
+
+@media (max-width: 600px) and (min-width: 363px) {
+    body {
+        background-color: lightyellow;
+    }
+
+    .Main {
+        background: linear-gradient(to bottom, rgba(8, 163, 168, 0.63), white);
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .logo {
+        justify-content: flex-start;
+    }
+
+    .Main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .leftside {
+        width: 100%;
+        text-align: center;
+        height: 70vh;
+        margin-top: 4rem;
+    }
+
+    .leftside h1 {
+        font-size: 2rem;
+    }
+
+    .btn1 {
+        border-radius: 2rem;
+        margin-top: 2rem;
+    }
+
+    .leftside h4 {
+        font-size: 3rem;
+    }
+
+    .leftside p {
+        font-size: 1rem;
+        width: 25rem;
+        display: none;
+    }
+
+    .leftside h3 {
+        font-size: 2rem;
+    }
+
+    .log-items {
+        height: 3rem;
+    }
+
+    .contact-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-head {
+        margin: 1rem;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .service-head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-offer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .web-design {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .card-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .cmain {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: auto;
+
+    }
+
+    .project {
+        display: block;
+    }
+
+    .project1 {
+        margin: 2rem;
+        height: auto;
+    }
+
+    .projectup {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projectdown {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-column {
+        width: auto;
+    }
+
+    .left-column p {
+        width: auto;
+
+    }
+
+    .testimonial-container {
+        height: 100rem;
+        width: auto;
+    }
+
+    .testinomials {
+        margin-bottom: 2rem;
+    }
+
+    .Sign {
+        margin-top: 10rem;
+    }
+
+    .footer-container {
+        display: none;
+    }
+}
+
+@media (max-width:1028px)and (min-width:770px) {
+
+    .service-head {
+        margin: 2rem;
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        text-align: justify;
+    }
+
+    .service-offer {
+        width: auto;
+        height: fit-content;
+    }
+
+    .Team {
+        width: auto;
+    }
+
+    .card-container {
+        width: auto;
+        margin: 2rem;
+    }
+
+    .card-image {
+        width: auto;
+        height: auto;
+    }
+
+    .card-content {
+        height: auto;
+        width: auto;
+    }
+
+    .card {
+        width: auto;
+        height: auto;
+    }
+}
+
+/*-------------------------------------------------------------------------Banner----------------------------------------------------------------------*/
+/* .service-title{
+    margin-bottom: 30rem;
+}
+.banner {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .slider {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 10%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
+.item {
+    position: absolute;
+    inset: 0 0 0 0 ;
+    transform:rotateY(calc((var(--position)-1)*(360 / var(--quantity)) * 1deg))
+    translateZ(550px); 
+}
+
+.banner.slider.item img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+} */
+
+.service {
+    perspective: 1000px;
+    height: 70vh;
+    background-color: transparent;
+  }
+  
+  .banner {
+    position: relative;
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .slider {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    animation: rotate 15s infinite linear;
+  }
+  
+  .item {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    transform-style: preserve-3d;
+    /* opacity: 0.7; */
+    transition: transform 0.5s;
+  
+
+  }
+  .item:hover {
+    /* transform: scale(1.2) translateZ(300px);
+    z-index: 1; */
+    height: 420px;
+    width: 310px;
+  }
+  
+  .item:nth-child(1) { transform: rotateY(calc(360deg / var(--quantity) * 0)) translateZ(500px); }
+  .item:nth-child(2) { transform: rotateY(calc(360deg / var(--quantity) * 1)) translateZ(500px); }
+  .item:nth-child(3) { transform: rotateY(calc(360deg / var(--quantity) * 2)) translateZ(500px); }
+  .item:nth-child(4) { transform: rotateY(calc(360deg / var(--quantity) * 3)) translateZ(500px); }
+  .item:nth-child(5) { transform: rotateY(calc(360deg / var(--quantity) * 4)) translateZ(500px); }
+  .item:nth-child(6) { transform: rotateY(calc(360deg / var(--quantity) * 5)) translateZ(500px); }
+  .item:nth-child(7) { transform: rotateY(calc(360deg / var(--quantity) * 6)) translateZ(500px); }
+  .item:nth-child(8) { transform: rotateY(calc(360deg / var(--quantity) * 7)) translateZ(500px); }
+  .item:nth-child(9) { transform: rotateY(calc(360deg / var(--quantity) * 8)) translateZ(500px); }
+  .item:nth-child(10) { transform: rotateY(calc(360deg / var(--quantity) * 9)) translateZ(500px); }
+  
+  @keyframes rotate {
+    from {
+      transform:perspective(1000px) rotateX(-16deg) rotateY(0deg)  ;
+    }
+    to {
+      transform: perspective(1000px)  rotateX(-16deg) rotateY(360deg) ;
+    }
+  }
+  
+ .border {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.9), 0 0 50px rgba(238, 160, 43, 0.897);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* .border:hover {
+ 
+  height: 420px;
+  width: 310px;
+}
+   */
+  .serviceimg img {
+ height: 100px;
+ width: 100px;
+  }
+
+  .serviceimg img:hover {
+    height: 110px;
+    width: 110px;
+     }
+   
+/*-------------------------------------------------------------------------------Projects--------------------------------------------------------------------*/
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    height: 80vh;
+    overflow: hidden;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  .globe{
+ 
+    width: 100%;
+    
+  }
