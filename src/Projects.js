@@ -22,7 +22,7 @@ import underwater from './Images/underwater.jpg';
 import ocean from './Images/ocean.jpg';
 import mountainskies from './Images/mountainskies.jpg';
 
-function Team() {
+function Project() {
 
     
   var settings = {
@@ -72,25 +72,6 @@ function Team() {
 
     <section id='teamsection' >
      <h1 className='team-head'>PROJECTS I <span>CREATED</span></h1>
-        {/* <div  className="card-container">
-        <Slider {...settings}>
-        {teamMembers.map((Member) => (
-          <div className='empty'>
-        <div key={Member.id} data-aos="flip-up"  className="card">
-        <div className="card-image">
-            <img src={picemp2} />
-          </div>
-          <div className="card-content">
-            <h2>{Member.Name}</h2>
-            <p>{Member.description}</p>
-          </div>
-        </div>
-        </div>
-        
-        
-      ))}
-       </Slider>
-        </div> */}
  
  <div className="row">
       <div className="column">
@@ -136,4 +117,4 @@ function Team() {
   
 }
 
-export default Team
+export default Project

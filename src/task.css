@@ -479,6 +479,12 @@ overflow: hidden;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 3rem;
+    background-color: white;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+   padding-bottom: 3rem;
 }
 
 .team-head span {
@@ -2377,3 +2383,5 @@ th {
     width: 100%;
     
   }
+  /*-----------------------------------------------------------------------------Login----------------------------------------*/
+  

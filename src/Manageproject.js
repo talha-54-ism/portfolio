@@ -1,129 +1,133 @@
-import React, { useState, useEffect } from 'react';
-import { collection, addDoc, getDocs, updateDoc, deleteDoc, doc } from 'firebase/firestore';
-import { db } from './firebase';
+// Manageprojects.js
+import React, { useEffect, useState } from 'react';
+import { collection, getDocs, addDoc, doc, updateDoc, deleteDoc } from 'firebase/firestore';
+import { db } from './firebase'; // Ensure this path is correct
 
-function ManageProject() {
-  const [project, setproject] = useState([]);
-  const [newproject, setnewproject] = useState({ Name: '', description: '' });
-  const [selectedImage, setSelectedImage] = useState(null);
+const Manageprojects = () => {
+  const [projects, setProjects] = useState([]);
+  const [newProject, setNewProject] = useState({ Name: '', description: '', photoURL: '' });
+  const [editingProject, setEditingProject] = useState(null);
+  const [editData, setEditData] = useState({ Name: '', description: '', photoURL: '' });
 
-
-  const handleImageChange = (e) => {
-    const file = e.target.files[0];
-
-    if (file) {
-      // Perform any additional logic with the selected file if needed
-      setSelectedImage(file);
-
+  // Fetch projects from Firestore
+  const fetchProjects = async () => {
+    try {
+      const querySnapshot = await getDocs(collection(db, 'Projects'));
+      const projectsList = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+      setProjects(projectsList);
+    } catch (error) {
+      console.error('Error fetching team projects:', error);
     }
   };
 
   useEffect(() => {
-    const fetchproject = async () => {
-      try {
-        const querySnapshot = await getDocs(collection(db, 'Projects'));
-        const fetchedproject = [];
-        querySnapshot.forEach((doc) => {
-          fetchedproject.push({ id: doc.id, ...doc.data() });
-        });
-        setproject(fetchedproject);
-      } catch (error) {
-        console.error('Error fetching project:', error);
-      }
-    };
-
-    fetchproject();
+    fetchProjects(); // Fetch projects on component mount
   }, []);
 
-  const addproject = async () => {
+  // Add a new project
+  const handleAdd = async () => {
     try {
-      const docRef = await addDoc(collection(db, 'Projects'), newproject);
-      setproject((prevproject) => [...prevproject, { id: docRef.id, ...newproject }]);
-      setnewproject({ Name: '', description: '' });
+      await addDoc(collection(db, 'Projects'), newProject);
+      setNewProject({ Name: '', description: '', photoURL: '' });
+      fetchProjects(); // Refresh list
     } catch (error) {
-      console.error('Error adding testimonial:', error);
+      console.error('Error adding team project:', error);
     }
   };
 
-  const updateproject = async (id) => {
+  // Update an existing project
+  const handleUpdate = async () => {
     try {
-      const testimonialDoc = doc(db, 'Projects', id);
-      await updateDoc(testimonialDoc, newproject);
-      setproject((prevproject) =>
-        prevproject.map((testimonial) => (testimonial.id === id ? { ...testimonial, ...newproject } : testimonial))
-      );
-      setnewproject({ Name: '', description: '' });
+      const projectDoc = doc(db, 'Projects', editingProject.id);
+      await updateDoc(projectDoc, editData);
+      setEditingProject(null);
+      setEditData({ Name: '', description: '', photoURL: '' });
+      fetchProjects(); // Refresh list
     } catch (error) {
-      console.error('Error updating testimonial:', error);
+      console.error('Error updating team project:', error);
     }
   };
 
-  const deleteproject = async (id) => {
+  // Delete a project
+  const handleDelete = async (id) => {
     try {
-      await deleteDoc(doc(db, 'Projects', id));
-      setproject((prevproject) => prevproject.filter((testimonial) => testimonial.id !== id));
+      const projectDoc = doc(db, 'Projects', id);
+      await deleteDoc(projectDoc);
+      fetchProjects(); // Refresh list
     } catch (error) {
-      console.error('Error deleting testimonial:', error);
+      console.error('Error deleting team project:', error);
     }
   };
 
   return (
-    <section className='Managetestinomials' id='ManageProjectsection'>
     <div>
-      <h1 >Manage<span>project</span></h1>
-      <div className='inputfields'>
+      <h1>Manage Team Projects</h1>
+      
+      {/* Add New Project Form */}
+      <div>
+        <h2>Add New Project</h2>
         <input
-          className='add-test'
           type="text"
           placeholder="Name"
-          value={newproject.Name}
-          onChange={(e) => setnewproject({ ...newproject, Name: e.target.value })}
+          value={newProject.Name}
+          onChange={(e) => setNewProject({ ...newProject, Name: e.target.value })}
         />
         <input
-          className='add-test'
           type="text"
           placeholder="Description"
-          value={newproject.description}
-          onChange={(e) => setnewproject({ ...newproject, description: e.target.value })}
+          value={newProject.description}
+          onChange={(e) => setNewProject({ ...newProject, description: e.target.value })}
         />
-         <input
-           className='imageInput'
-           type="file"
-           accept="image/*" // Specify accepted file types, in this case, images
-           onChange={handleImageChange}
-           id="imageInput"
-           />
-        <button onClick={addproject}>Add project</button>
+        <input
+          type="text"
+          placeholder="Photo URL"
+          value={newProject.photoURL}
+          onChange={(e) => setNewProject({ ...newProject, photoURL: e.target.value })}
+        />
+        <button onClick={handleAdd}>Add Project</button>
       </div>
-     {/* Read Operation - Display project */}
-        
-         
-     <table>
-          <thead>
-              <tr>
-                  <th>ID</th>
-                  <th>Name</th>
-                  <th>Description</th>
-                  <th>Actions</th>
-              </tr>
-          </thead>
-          <tbody>
-              {project.map(testimonial => (
-                  <tr key={testimonial.id} className='test-data'>
-                      <td>{testimonial.id}</td>
-                      <td>{testimonial.Name}</td>
-                      <td>{testimonial.description}</td>
-                      <td className='btn-manage'>
-                      <button  className='btn-update' onClick={() => updateproject(testimonial.id)}>Update</button>
-                      <button  className='btn-delete' onClick={() => deleteproject(testimonial.id)}>Delete</button>
-                      </td>
-                  </tr>
-              ))}
-          </tbody>
-      </table>
-    </div>
-    </section>
-  );
-}
+      
+      {/* Project List */}
+      <ul>
+        {projects.map((project) => (
+          <li key={project.id}>
+            <img src={project.photoURL} alt={project.Name} />
+            <h2>{project.Name}</h2>
+            <p>{project.description}</p>
+            <button onClick={() => { setEditingProject(project); setEditData(project); }}>
+              Edit
+            </button>
+            <button onClick={() => handleDelete(project.id)}>
+              Delete
+            </button>
+          </li>
+        ))}
+      </ul>
 
-export default ManageProject;
+      {/* Edit Project Form */}
+      {editingProject && (
+        <div>
+          <h2>Edit Project</h2>
+          <input
+            type="text"
+            value={editData.Name}
+            onChange={(e) => setEditData({ ...editData, Name: e.target.value })}
+          />
+          <input
+            type="text"
+            value={editData.description}
+            onChange={(e) => setEditData({ ...editData, description: e.target.value })}
+          />
+          <input
+            type="text"
+            value={editData.photoURL}
+            onChange={(e) => setEditData({ ...editData, photoURL: e.target.value })}
+          />
+          <button onClick={handleUpdate}>Update</button>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default Manageprojects;

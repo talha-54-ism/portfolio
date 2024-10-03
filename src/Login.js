@@ -10,7 +10,7 @@ import Main from './Main';
 import Dashboard from './Dashboard';
 
 
-function Createnewaccount() {
+function Login() {
 
     useEffect(() => {
         AOS.init({
@@ -92,4 +92,4 @@ const signup=()=>{
   )
 }
 
-export default Createnewaccount
+export default Login

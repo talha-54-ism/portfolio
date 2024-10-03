@@ -3,7 +3,6 @@ import ManageTeam from './ManageTeam';
 import TestimonialsCRUD from './Managetestinomials';
 import ManageProject from './Manageproject';
 import Navbar from './Navbar';
-import myvideo from './Images/bgvideo.mp4'
 
 const Dashboard = () => {
   const [activeContent, setActiveContent] = useState(null);
@@ -15,7 +14,7 @@ const Dashboard = () => {
   return (
     <section className='dash'>
        <video autoPlay loop muted className="video-background__video">
-        <source src={myvideo} type="video/mp4" />
+        {/* <source src={myvideo} type="video/mp4" /> */}
       </video>
       <div className='dashboard'>
 
