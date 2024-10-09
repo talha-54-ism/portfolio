@@ -28,23 +28,22 @@ function App() {
           <Navbar />
           <Main />
           <About />
-          <Projects/>
+          <Projects />
           <Success />
           <Services />
-         <Project /> 
+          {/* <Project /> */}
           <Contacform />
           <Communication />
-          <Testinomials />
+          {/* <Testinomials /> */}
           <Login />
-         
+
 
           {/* Routed components (for specific paths) */}
           <Routes>
-         
+
             <Route path='/signup' element={<Contacform />} />
-            <Route path='/signup' element={<Contacform />} />
-            <Route path='/dashboard' element={<Dashboard />} />
-         
+            {/* <Route path='/dashboard' element={<Dashboard />} /> */}
+
           </Routes>
 
           <Footer />

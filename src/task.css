@@ -4,7 +4,7 @@
     text-decoration: none;
     scroll-behavior: smooth;
     scroll-behavior: smooth;
- 
+
 }
 
 .styles {
@@ -14,7 +14,7 @@
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
-  
+
 }
 
 .navbar {
@@ -118,7 +118,7 @@
 /* --------------------------------------------------------------------------------Main-------------------------------------------------------*/
 
 .Main {
-    height: 90vh;
+    height: 100vh;
     background-color: white;
     display: flex;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -472,7 +472,7 @@
     align-items: center;
     background-color: white;
     height: 60vh;
-overflow: hidden;
+    overflow: hidden;
 }
 
 .team-head {
@@ -483,8 +483,8 @@ overflow: hidden;
     height: 5rem;
     display: flex;
     justify-content: center;
-    align-items:center ;
-   padding-bottom: 3rem;
+    align-items: center;
+    padding-bottom: 3rem;
 }
 
 .team-head span {
@@ -684,7 +684,7 @@ overflow: hidden;
 .testinomials {
     width: 100%;
     display: flex;
-  
+
     justify-content: center;
     align-items: center;
 }
@@ -912,7 +912,7 @@ overflow: hidden;
 
 .footer-container {
 
-    height: 18rem;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -922,8 +922,9 @@ overflow: hidden;
 .footer-box {
 
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #1b96c7b9;
@@ -937,6 +938,10 @@ overflow: hidden;
     width: 30rem;
     margin: 1rem;
     margin-left: 6rem;
+}
+.links{
+    display: flex;
+    justify-content: center;
 }
 
 .logo-section {
@@ -1300,7 +1305,7 @@ overflow: hidden;
 .success {
     display: block;
     background-color: #1b96c7b9;
-    height: 45vh;
+    height: 70vh;
     position: relatives;
     overflow: hidden;
 }
@@ -1308,6 +1313,7 @@ overflow: hidden;
 .success-icons {
     display: flex;
     justify-content: center;
+    padding-top: 6rem;
     align-items: center;
 }
 
@@ -2210,114 +2216,113 @@ th {
 }
 
 /*-------------------------------------------------------------------------Banner----------------------------------------------------------------------*/
-/* .service-title{
-    margin-bottom: 30rem;
-}
-.banner {
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    overflow: hidden;
-    position: relative;
-}
 
-.banner .slider {
-    position: absolute;
-    width: 200px;
-    height: 250px;
-    top: 10%;
-    left: calc(50% - 100px);
-    transform-style: preserve-3d;
-    transform: perspective(1000px);
-}
-
-.item {
-    position: absolute;
-    inset: 0 0 0 0 ;
-    transform:rotateY(calc((var(--position)-1)*(360 / var(--quantity)) * 1deg))
-    translateZ(550px); 
-}
-
-.banner.slider.item img {
-
-    width: 100%;
-
-    height: 100%;
-
-    object-fit: cover;
-
-} */
 
 .service {
     perspective: 1000px;
-    height: 70vh;
+    height: 90vh;
     background-color: transparent;
-  }
-  
-  .banner {
+}
+
+.banner {
     position: relative;
     width: 100%;
-    height:100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-  }
-  
-  .slider {
-    
+    margin-bottom: 4rem;
+}
+
+.slider {
     display: flex;
     justify-content: center;
     align-items: center;
     transform-style: preserve-3d;
     animation: rotate 15s infinite linear;
-  }
-  
-  .item {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    animation-play-state: running;
+    /* Default to running */
+    transition: transform 1s;
+    /* Smooth transition for transform */
+}
+
+.item {
     position: absolute;
     width: 300px;
     height: 400px;
     transform-style: preserve-3d;
-    /* opacity: 0.7; */
-    transition: transform 0.5s;
-  
+    transition: transform 1s;
+    /* Smooth scaling transition on hover */
+}
 
-  }
-  .item:hover {
-    /* transform: scale(1.2) translateZ(300px);
-    z-index: 1; */
+.item:hover {
     height: 420px;
     width: 310px;
-  }
-  
-  .item:nth-child(1) { transform: rotateY(calc(360deg / var(--quantity) * 0)) translateZ(500px); }
-  .item:nth-child(2) { transform: rotateY(calc(360deg / var(--quantity) * 1)) translateZ(500px); }
-  .item:nth-child(3) { transform: rotateY(calc(360deg / var(--quantity) * 2)) translateZ(500px); }
-  .item:nth-child(4) { transform: rotateY(calc(360deg / var(--quantity) * 3)) translateZ(500px); }
-  .item:nth-child(5) { transform: rotateY(calc(360deg / var(--quantity) * 4)) translateZ(500px); }
-  .item:nth-child(6) { transform: rotateY(calc(360deg / var(--quantity) * 5)) translateZ(500px); }
-  .item:nth-child(7) { transform: rotateY(calc(360deg / var(--quantity) * 6)) translateZ(500px); }
-  .item:nth-child(8) { transform: rotateY(calc(360deg / var(--quantity) * 7)) translateZ(500px); }
-  .item:nth-child(9) { transform: rotateY(calc(360deg / var(--quantity) * 8)) translateZ(500px); }
-  .item:nth-child(10) { transform: rotateY(calc(360deg / var(--quantity) * 9)) translateZ(500px); }
-  
-  @keyframes rotate {
+    transition: transform 1s;
+    /* Maintain smooth transition on hover */
+}
+
+.item:nth-child(1) {
+    transform: rotateY(calc(360deg / var(--quantity) * 0)) translateZ(500px);
+}
+
+.item:nth-child(2) {
+    transform: rotateY(calc(360deg / var(--quantity) * 1)) translateZ(500px);
+}
+
+.item:nth-child(3) {
+    transform: rotateY(calc(360deg / var(--quantity) * 2)) translateZ(500px);
+}
+
+.item:nth-child(4) {
+    transform: rotateY(calc(360deg / var(--quantity) * 3)) translateZ(500px);
+}
+
+.item:nth-child(5) {
+    transform: rotateY(calc(360deg / var(--quantity) * 4)) translateZ(500px);
+}
+
+.item:nth-child(6) {
+    transform: rotateY(calc(360deg / var(--quantity) * 5)) translateZ(500px);
+}
+
+.item:nth-child(7) {
+    transform: rotateY(calc(360deg / var(--quantity) * 6)) translateZ(500px);
+}
+
+.item:nth-child(8) {
+    transform: rotateY(calc(360deg / var(--quantity) * 7)) translateZ(500px);
+}
+
+.item:nth-child(9) {
+    transform: rotateY(calc(360deg / var(--quantity) * 8)) translateZ(500px);
+}
+
+.item:nth-child(10) {
+    transform: rotateY(calc(360deg / var(--quantity) * 9)) translateZ(500px);
+}
+
+@keyframes rotate {
     from {
-      transform:perspective(1000px) rotateX(-16deg) rotateY(0deg)  ;
+        transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
     }
+
     to {
-      transform: perspective(1000px)  rotateX(-16deg) rotateY(360deg) ;
+        transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
     }
-  }
-  
- .border {
-  border: 2px solid #ddd;
-  border-radius: 10px;
-  padding: 10px;
-  background: #fff;
-  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.9), 0 0 50px rgba(238, 160, 43, 0.897);
-  transition: box-shadow 0.3s ease-in-out;
+}
+
+.border {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.9), 0 0 70px rgb(20, 180, 170);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 /* .border:hover {
@@ -2326,62 +2331,71 @@ th {
   width: 310px;
 }
    */
-  .serviceimg img {
- height: 100px;
- width: 100px;
-  }
+.serviceimg img {
+    height: 100px;
+    width: 100px;
+}
 
-  .serviceimg img:hover {
+/* .serviceimg img:hover {
+
+     } */
+.serviceimg:hover+.border {
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8), 0 0 70px rgba(290, 160, 43, 5);
     height: 110px;
     width: 110px;
-     }
-   
+}
+
 /*-------------------------------------------------------------------------------Projects--------------------------------------------------------------------*/
 .row {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
+    display: -ms-flexbox;
+   
+    /* display: flex;
+
+    -ms-flex-wrap: wrap; */
     flex-wrap: wrap;
     padding: 0 4px;
-    height: 80vh;
+    height: 100vh;
     overflow: hidden;
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
-    -ms-flex: 25%; /* IE10 */
+    background-color: white;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%;
+    /* IE10 */
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
-  }
-  
-  .column img {
+}
+
+.column img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
     .column {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
     }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
     .column {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
     }
-  }
-  .globe{
- 
+}
+
+.globe {
+
     width: 100%;
-    
-  }
-  /*-----------------------------------------------------------------------------Login----------------------------------------*/
-  
+
+}
+
+/*-----------------------------------------------------------------------------Login----------------------------------------*/

@@ -46,18 +46,18 @@ function Navbar() {
         <ul>
           <a href='#Homesection'>Home</a>
           <a href='#contactsection'>Contact</a>
-          <a href='#servicesection'>Services</a>
-          <a href='#testinomialssection'>Testimonials</a>
-          <a href='#teamsection'>Team</a>
+          <a href='#servicesection'>Skills</a>
+          {/* <a href='#testinomialssection'>Testimonials</a> */}
+          {/* <a href='#teamsection'>Team</a> */}
           <a href='#signinsection'>Contact us</a>
           <a href='#usersection'>Signin</a>
 
         </ul>
 
       </div>
-      <div className='dashhh'>
+      {/* <div className='dashhh'>
         <button className='dashbtn' onClick={dash}>Dashboard</button>
-      </div>
+      </div> */}
 
 
     </div>
